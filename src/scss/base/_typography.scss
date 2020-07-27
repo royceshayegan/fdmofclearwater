@@ -1,0 +1,28 @@
+@import 'assets/webfont/stylesheet.css';
+
+body, p {
+    font-family: $font-tertiary;
+    font-size: 14px;
+    color: $lightgrey;
+
+    @media only screen and (min-width: $sm) {
+        font-size: 20px;
+        margin: 3rem 0;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-primary;
+    color: $grey;
+}
+
+.headline {
+    font-family: $font-primary;
+    color: $grey;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #b4732a, #edd78c, #b4732a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

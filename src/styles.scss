@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import 'scss/main';
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.parallax-window {
+	min-height: 400px;
+	background: transparent;
+}
+
+-webkit-scrollbar, body::-webkit-scrollbar, -webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+  
+  -webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.26);
+    background-color: #690000;
+    outline: 1px solid #333;
+  }
+
+.page-sheath {
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.page-container {
+    margin-top: 94px;
+    width: 100%;
+    height: 100%;
+    
+    @media only screen and (min-width: 860px) {
+        margin-top: 198px;
+    }
+}

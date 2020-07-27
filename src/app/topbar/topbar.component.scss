@@ -1,0 +1,224 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 94px;
+  width: 230px;
+  height: 100%;
+  background-color: #fff;
+  transform: translateX(-100%);
+  transition: all 250ms ease-in-out;
+
+  ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+          margin: 16px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+  }
+
+  &.open {
+      transform: translateX(0);
+  }
+}
+
+.navbar-node {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 36px;
+  height: 100%;
+  color: #212121;
+  background-color: transparent;
+  font-family: 'Work Sans';
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 250ms ease;
+
+  &.active, &:hover {
+      color: #d41317;
+      color: #690000;
+  }
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 32px;
+  background-color: #fff;
+  border-bottom: 6px solid #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 1920px;
+  z-index: 999;
+
+  .sidebar-button {
+      display: flex;
+      width: 80px;
+      position: absolute;
+      height: 88px;
+      left: 0;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      button {
+          -webkit-appearance: none;
+          background-color: transparent;
+          border: 0;
+          outline: 0;
+          cursor: pointer;
+          padding: 24px;
+      }
+
+      @media only screen and (min-width: 860px) {
+          display: none;
+      }
+  }
+
+  
+
+  .badge-left {
+      display: none;
+      position: absolute;
+      left: 48px;
+      top: 24px;
+
+      p {
+          font-family: 'Work Sans';
+          color: rgba(0,0,0,.87);
+          font-size: 14px;
+          font-weight: 700;
+      }
+
+      @media only screen and (min-width: 860px) {
+          display: block;
+      }
+  }
+
+  .badge-right {
+      display: none;
+      position: absolute;
+      right: 48px;
+      top: 24px;
+      flex-direction: column;
+
+      p {
+          font-family: 'Work Sans';
+          color: rgba(0,0,0,.87);
+          font-size: 14px;
+          font-weight: 700;
+          margin: 6px 0;
+      }
+
+      @media only screen and (min-width: 860px) {
+          display: flex;
+      }
+  }
+
+  .navbar-sheath {
+      width: 100%;
+      height: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .navbar-row {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  #node-row {
+      display: none;
+      height: 68px;
+
+      @media only screen and (min-width: 860px) {
+          display: flex;
+      }
+  }
+
+  .navbar-logo {
+      display: flex;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      height: 100%;
+
+      img {
+          height: 64px;
+          margin-top: 24px;
+
+          @media only screen and (min-width: 860px) {
+              width: 280px;
+              height: 100px;
+          }
+      }
+  }
+
+  .navbar-nodes {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+
+      .navbar-node {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 36px;
+          height: 100%;
+          color: #212121;
+          background-color: transparent;
+          font-family: 'Work Sans';
+          font-weight: 600;
+          text-decoration: none;
+          font-size: 16px;
+          transition: 250ms ease;
+
+          &.active, &:hover {
+              color: #d41317;
+              color: #690000;
+          }
+      }
+
+      .contact-button {
+          height: 48px;
+          min-width: 164px;
+          background-color: #d83232;
+          border-radius: 4px;
+          color: #fff;
+          margin-left: 48px;
+      }
+  }
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Work Sans';
+}
+
+span {
+  font-size: 12px;
+  letter-spacing: .5px;
+  color: rgba(0,0,0,.87);
+}

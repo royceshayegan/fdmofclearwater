@@ -1,0 +1,130 @@
+// Cards
+
+.ss-card {
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 0.25rem 0.125rem 0 rgba(0,0,0,.05);
+    border-radius: .25rem;
+    display: flex;
+
+    .icon-container {
+        width: 100%;
+        max-width: 120px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: .25rem;
+        border-bottom-left-radius: .25rem;
+        background-color: #fff;
+        padding-top: 24px;
+
+        .icon {
+            color: #448aff;
+        }
+    }
+
+    .info-block {
+        padding: 42px 42px 24px 42px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+
+        .title {
+            color: #595f6d;
+            font-weight: 500;
+            margin: 0 0 .5rem 0;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'Roboto';
+        }
+
+        .desc {
+            color: rgba(89, 95, 109, .87);
+            font-family: 'Roboto';
+            margin: 0;
+            margin-top: 12px;
+            line-height: 1.8;
+        }
+
+        
+
+    }
+    .action {
+        display: flex;
+        width: 100%;
+        height: 84px;
+        padding: 42px;
+        justify-content: flex-end;
+        align-items: center;
+
+        a {
+            color: #448aff;
+            text-decoration: none;
+            padding: 12px;
+            font-family: 'Roboto';
+            font-size: 16px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// Card Link
+
+.ss-card.link {
+    cursor: pointer;
+    transition: all 200ms ease;
+
+    &:hover {
+        transform: translateY(-4px);
+
+        .title::after {
+            width: 100%;
+            transition: width .3s;
+        }
+
+    }
+
+    .title::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #89d9fc;
+        transition: width .3s;
+    }
+    
+    
+}
+
+// Card Height
+
+.ss-card.h1 {
+    height: 120px;
+}
+
+.ss-card.h2 {
+    height: 164px;
+}
+
+.ss-card.h3 {
+    height: 180px;
+}
+
+.ss-card.h4 {
+    height: 220px;
+}
+
+.ss-card.h5 {
+    height: 264px;
+}
+
+.ss-card.h6 {
+    height: 300px;
+}
+

@@ -1,0 +1,97 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+
+  h1 {
+      color: #690000;
+      text-transform: uppercase;
+      font-family: 'Work Sans';
+  }
+}
+
+.equipment {
+  width: 100%;
+  max-width: 600px;
+  margin: 24px auto 48px;
+  display: flex;
+
+  .inner {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+
+      #vertical-edm {
+          background-image: url("/assets/pics/20180726_075713-min.jpg");
+      }
+
+      #wire-edm {
+          background-image: url("/assets/pics/20180726_074357-min.jpg");
+      }
+
+      #milling-machines {
+          background-image: url("/assets/pics/20180726_074903-min.jpg");
+      }
+
+      #grinding-equipment {
+          background-image: url("/assets/pics/20180726_074709-min.jpg");
+      }
+
+      #lathes {
+          background-image: url("/assets/pics/20180726_074931-min.jpg");
+      }
+
+      #misc-equipment {
+          background-image: url("/assets/pics/20180726_075907-min.jpg");
+      }
+
+      #inspections-equipment {
+          background-image: url("/assets/pics/20180726_074600-min.jpg");
+      }
+
+      .header-image {
+          width: 100%;
+          height: 400px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+      }
+
+      .content {
+          max-width: 440px;
+          margin: 0 auto;
+      }
+
+      h2 {
+          font-family: 'Work Sans';
+          color: #690000;
+          text-transform: uppercase;
+          text-align: center;
+      }
+
+      ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
+          li {
+              font-size: 24px;
+              color: rgba(0, 0, 0, 0.87);
+              font-family: 'Roboto';
+              text-indent: -32px;
+              margin-left: 32px;
+          }
+      }
+
+      p {
+          font-family: 'Roboto';
+          font-size: 18px;
+          font-weight: 500;
+          text-align: center;
+          font-style: italic;
+      }
+  }
+}

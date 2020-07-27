@@ -1,0 +1,9 @@
+<div class="page-sheath">
+  <fdm-topbar></fdm-topbar>
+  <div class="page-container">
+    <div [@routerTransition]="getState(o)">
+      <router-outlet #o="outlet"></router-outlet>
+    </div>
+  </div>
+  <fdm-footer></fdm-footer>
+</div>

@@ -1,0 +1,47 @@
+@import 'abstracts/_variables';
+
+// Buttons
+
+.cp-button {
+    font-size: 16px;
+    font-family: "Playfair Display SC";
+    margin: 1rem 0;
+    background-color: transparent;
+    color: #4aa98f;
+    border: 2px solid #4aa98f;
+    padding: 8px 24px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 700;
+    transition: all 200ms ease;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #4aa98f;
+        color: #fff;
+    }
+
+    @media only screen and (min-width: $sm) {
+        padding: 8px 80px;
+    }
+}
+
+.cp-button.white {
+    border: 2px solid #fff;
+    color: #fff;
+
+    &:hover {
+        background-color: #fff;
+        color: $green;
+    }
+
+    @media only screen and (min-width: $sm) {
+        padding: 8px 80px;
+    }
+}
+
+.cp-button.hover-white-bg:hover {
+    background-color: #fff;
+    color: #4aa98f;
+}

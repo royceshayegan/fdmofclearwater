@@ -1,0 +1,108 @@
+<div class="navbar">
+  <div class="sidebar-button">
+    <button id="sidebar-button" (click)="openSidebar()">
+      <i class="material-icons">
+        menu
+      </i>
+    </button>
+  </div>
+  <div class="badge-left">
+    <p>Aerojet RAPWA 97 Approved</p>
+  </div>
+  <div class="badge-right">
+    <p>
+      <a href="mailto:fdmofclearwater@aol.com"
+        ><span>Email: </span>FDMofClearwater@aol.com</a
+      >
+    </p>
+    <p><span>Phone: </span>(727)-544-8801</p>
+    <p><span>Mon - Fri: </span>7am - 3:30pm</p>
+  </div>
+  <div class="navbar-sheath">
+    <div class="navbar-row" id="logo-row">
+      <div class="navbar-logo">
+        <img src="/assets/fdmlogo.svg" alt="" />
+      </div>
+    </div>
+    <div class="navbar-row" id="node-row">
+      <div class="navbar-nodes">
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="navbar-node"
+          >Home</a
+        >
+        <a routerLink="/services" routerLinkActive="active" class="navbar-node"
+          >Services</a
+        >
+        <a routerLink="/equipment" routerLinkActive="active" class="navbar-node"
+          >Equipment</a
+        >
+        <a routerLink="/about" routerLinkActive="active" class="navbar-node"
+          >About</a
+        >
+        <a target="_blank" href="assets/fdmbrochure.pdf" class="navbar-node"
+          >Download Brochure</a
+        >
+        <a routerLink="/contact" class="navbar-node">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sidebar" id="sidebar">
+  <ul>
+    <li>
+      <a
+        (click)="openSidebar()"
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="navbar-node"
+        >Home</a
+      >
+    </li>
+    <li>
+      <a
+        (click)="openSidebar()"
+        routerLink="/services"
+        routerLinkActive="active"
+        class="navbar-node"
+        >Services</a
+      >
+    </li>
+    <li>
+      <a
+        (click)="openSidebar()"
+        routerLink="/equipment"
+        routerLinkActive="active"
+        class="navbar-node"
+        >Equipment</a
+      >
+    </li>
+    <li>
+      <a
+        (click)="openSidebar()"
+        routerLink="/about"
+        routerLinkActive="active"
+        class="navbar-node"
+        >About</a
+      >
+    </li>
+    <li>
+      <a
+        (click)="openSidebar()"
+        target="_blank"
+        href="assets/fdmbrochure.pdf"
+        class="navbar-node"
+        >Download Brochure</a
+      >
+    </li>
+    <li>
+      <a (click)="openSidebar()" routerLink="/contact" class="navbar-node"
+        >Contact Us</a
+      >
+    </li>
+  </ul>
+</div>

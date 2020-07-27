@@ -1,0 +1,22 @@
+.kf-toolbar {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background-color: transparent;
+    transition: all 200ms ease;
+    padding: 0 24px;
+
+    mat-toolbar-row {
+        height: 120px;
+    }
+}
+
+.isScrolling {
+    height: 64px;
+    background: linear-gradient(to right, #243B55, #141E30);
+    background: #424242;
+    box-shadow: 0 0.25rem 0.125rem 0 rgba(0,0,0,.05);
+}
